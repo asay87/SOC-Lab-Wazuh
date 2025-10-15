@@ -8,12 +8,13 @@
 ---
 
 ## 2. Installation du serveur Wazuh
- A Ubuntu
+
 ```bash
 sudo apt update && sudo apt upgrade -y
 curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
 sudo bash ./wazuh-install.sh -a
 ```
- B Window 10
-- Telechargement du package
-- 
+## 3. Installation de l’agent Windows
+ B Windows 10
+- Telechargement et installation du package d'installation 
+  
