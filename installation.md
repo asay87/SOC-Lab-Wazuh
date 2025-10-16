@@ -11,6 +11,16 @@
 
 ```bash
 sudo apt update && sudo apt upgrade -y
+sudo apt install curl vim net-tools ufw -y
+sudo apt install curl apt-transport-https lsb-release gnupg -y
+
+Active le pare-feu UFW :
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status
+sudo chmod 600 /etc/netplan/01-netcfg.yaml
+
+curl -sO https://packages.wazuh.com/4.13/wazuh-install.sh
 curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
 sudo bash ./wazuh-install.sh -a
 ```
