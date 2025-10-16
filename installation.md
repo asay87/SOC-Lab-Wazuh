@@ -14,6 +14,12 @@ sudo apt update && sudo apt upgrade -y
 curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
 sudo bash ./wazuh-install.sh -a
 ```
+On Verifie l'installation avec : 
+```
+sudo systemctl status wazuh-manager
+sudo systemctl status wazuh-indexer
+sudo systemctl status wazuh-dashboard
+```
 ## 3. Installation de l’agent Windows
  B Windows 10
 - Telechargement et installation du package d'installation 
